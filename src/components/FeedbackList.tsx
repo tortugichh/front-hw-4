@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { FeedbackItem } from './FeedbackItem';
-import { useFeedbackStore, type Category } from '../store/feedbackStore';
+import { useFeedbackStore } from '../store/feedbackStore';
 
 export function FeedbackList() {
   const feedbackList = useFeedbackStore((state) => state.feedbackList);

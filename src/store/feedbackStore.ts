@@ -64,7 +64,7 @@ const persistOptions: PersistOptions<FeedbackState, PersistedStateSlice> = {
 export const useFeedbackStore = create<FeedbackState>()(
   devtools(
     persist(
-      (set, get) => ({
+      (set) => ({
         
         feedbackList: [],
         filter: 'all', 
@@ -115,4 +115,4 @@ export const useFeedbackStore = create<FeedbackState>()(
       persistOptions 
     )
   )
-); 
+);
